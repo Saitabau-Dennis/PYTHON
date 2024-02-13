@@ -1,16 +1,11 @@
-
-import math
-
-def number_guessing_game(lower_bound, upper_bound):
-    winning_number = 20
-    while True:
-        guess_count = None
-        user_guess = int(input("Enter your guess: "))
-        if user_guess < winning_number:
-            print("Too Low.")
-        elif user_guess > winning_number:
-            print("Too high.")
-        else:
-            print("You Win!!!")
-            break
-        
+import random
+winning_number = int(input("Please enter a number between  1 and  20: "))
+random_number = random.randint(1,  20)
+while True:
+   
+    if winning_number == random_number:
+        print("YOU JUST WON A TRIP TO SARROW WHITE SANDS🙂")
+        break
+    else:
+        print("SORRY! TRY AGAIN LATER😞")
+        winning_number = int(input("Please enter a number between  1 and  20: "))

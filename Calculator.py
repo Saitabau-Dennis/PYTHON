@@ -1,4 +1,3 @@
-#Define function for each operation
 def add(num1,num2):
     return num1+num2
 def subtract(num1,num2):
@@ -18,7 +17,6 @@ def exponent(num1,num2):
 def floor_division(num1,num2):
     return num1//num2
 
-#prompt the user to select operator
 print("Please select operator -\n"
      "1.Add\n" 
      "2.Subtract\n"
@@ -27,9 +25,8 @@ print("Please select operator -\n"
      "5.Modulus\n"
      "6.exponent\n"
      "7.floor_division")
-#takes user selection as an input
 select=int(input("Select operators form 1,2,3,4,5,6,7 :"))
-#prompts the user to enter the number
+
 number_1=int(input("Enter first number:"))
 number_2=int(input("Enter second number:"))
 

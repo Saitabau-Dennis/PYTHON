@@ -4,7 +4,7 @@ random_number = random.randint(1,  20)
 while True:
    
     if winning_number == random_number:
-        print("YOU JUST WON A TRIP TO SARROW WHITE SANDS🙂")
+        print("YOU JUST WON A TO MALDIVES")
         break
     else:
         print("SORRY! TRY AGAIN LATER😞")

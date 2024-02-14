@@ -8,7 +8,10 @@ if years_of_service >  10:
 elif  6 <= years_of_service <=  10:
     bonus = salary *  0.08  #  8% bonus for  6 to  10 years
 else:
-    bonus = salary *  0.05   #  5% bonus for less than  6 years
+    bonus = salary *  0.05  #  5% bonus for less than  6 years
 
-# Print the net bonus amount
-print(f"Your net bonus amount is: {bonus}")
+# Calculate the total salary including bonus
+total_salary = salary + bonus
+
+# Print the total salary including bonus
+print(f"Your total salary including bonus is: {total_salary}")

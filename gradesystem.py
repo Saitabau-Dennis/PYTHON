@@ -28,5 +28,5 @@ for subject in subjects:
 
 average = sum(grades) / len(grades)
 
-print(f"The average score is: {average}")
-print(f"The grade based on the average score is: {determine_grade(average)}")
+print(f"The Average score is: {average}")
+print(f"The grade based on the Average score is: {determine_grade(average)}")

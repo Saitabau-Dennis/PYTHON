@@ -6,3 +6,6 @@ class Employee:
        pass
     def SalaryEmployee(Employee):
          pass
+    def CommissionEmployee(SalaryEmployee):
+        pass
+    

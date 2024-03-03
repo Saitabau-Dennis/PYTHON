@@ -3,10 +3,10 @@ class Employee:
         self.emp_id=emp_id
         self.name-name
     def Calculate_payroll():
-
-     def SalaryEmployee(Employee):
+        pass
+    def SalaryEmployee(Employee):
       def __init_ (self,emp_id,name,weekly_salary):
-         super().__init__(emp_id,name)
+         super().__init__(emp_id,name,)
        
     def CommissionEmployee(SalaryEmployee):
-        pass
+       pass

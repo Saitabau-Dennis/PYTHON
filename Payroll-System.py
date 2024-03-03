@@ -14,7 +14,7 @@ class SalaryEmployee(Employee):
         self.weekly_salary = weekly_salary
 
     def calculate_payroll(self):
-        return self.weekly_salary
+        return self.weekly_salary # Return the actual value, not a string
 
 # Another Derived class that inherits from the base class
 class HourlyEmployee(Employee):
@@ -24,8 +24,13 @@ class HourlyEmployee(Employee):
         self.hourly_rate = hourly_rate
 
     def calculate_payroll(self):
-        return self.hours_worked * self.hourly_rate
+        return self.hours_worked * self.hourly_rate # Return the actual value, not a string
 
 # Derived class which inherits from class SalaryEmployee
 class CommissionEmployee(SalaryEmployee):
-    pass
+    def __init__(self, emp_id, name, weekly_salary, commission_value):
+        super().__init__(emp_id, name, weekly_salary)
+        self.commission_value = commission_value # Add commission_value attribute
+
+    def calculate_payroll(self):
+        return self.weekly_salary + self.commission_value # Correctly calculate the payroll

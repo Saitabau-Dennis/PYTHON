@@ -5,8 +5,9 @@ class Employee:
     def Calculate_payroll():
         pass
     def SalaryEmployee(Employee):
-      def __init_ (self,emp_id,name,weekly_salary):
+      def __init__ (self,emp_id,name,weekly_salary):
          super().__init__(emp_id,name,)
+         self.weekly_salary=weekly_salary
        
     def CommissionEmployee(SalaryEmployee):
        pass

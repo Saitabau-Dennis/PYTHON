@@ -3,9 +3,7 @@ class Employee:
         self.emp_id = emp_id
         self.name = name
 
-    #def calculate_payroll(self):
-     #   return 0
-
+   
 class SalaryEmployee(Employee):
     def __init__(self, emp_id, name, weekly_salary):
         super().__init__(emp_id, name)

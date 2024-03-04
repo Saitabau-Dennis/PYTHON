@@ -35,9 +35,11 @@ class CommissionEmployee(SalaryEmployee):
 salary_employee = SalaryEmployee(223, "Dennis", 1000)
 payroll=salary_employee.calculate_payroll()
 print("Salary Employee Payroll:", payroll)
+
 hourly_employee=HourlyEmployee(224,"John",3,100)
 payroll=hourly_employee.calculate_payroll()
 print("Hourly Employee Payroll:", payroll)
+
 commission_employee = CommissionEmployee(225, "Sara", 500, 200) 
 payroll=commission_employee.calculate_payroll()
 print("Commission Employee Payroll:", payroll)

@@ -10,11 +10,14 @@ class Standarditem(Saleitem):
     def calculate_total(self):
         return self.quantity * self.unit_price
 class Discountitem(Standarditem):
-    def __init__(self, item_id, name, unit_price,quantity,discount_percentage):
-        self.discount_percentage=discount_percentage
-        super().__init__(item_id, name, unit_price,quantity)
+    def __init__(self, item_id, name, unit_price, quantity, discount_percentage):
+        self.discount_percentage = discount_percentage
+        super().__init__(item_id, name, unit_price, quantity)
+
     def calculate_total(self):
-        return self.quantity * self.unit_price/self.discount_percentage
+        discounted_price = self.unit_price * (1 - self.discount_percentage)
+        return self.quantity * discounted_price
+
 class Serviceitem(Saleitem):
     def __init__(self, item_id, name,unit_price,hours,hourly_rate):
         self.hourly_rate=hourly_rate
@@ -26,7 +29,7 @@ class Serviceitem(Saleitem):
 standard_item=Standarditem(200,'cooking oil',300,20)
 cost=standard_item.calculate_total()
 print("THE TOTAL COST FOR STANDARD ITEM IS:",cost)
-discount_item=Discountitem(201,'cabbage',500,60,20/100)
+discount_item=Discountitem(201,'cabbage',500,60,0.2)
 cost=discount_item.calculate_total()
 print("THE TOTAL COST FOR DISCOUNT ITEM IS:",cost)
 service_item=Serviceitem(203,'car',90,4,100)

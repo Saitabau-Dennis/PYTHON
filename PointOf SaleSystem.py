@@ -29,9 +29,11 @@ class Serviceitem(Saleitem):
 standard_item=Standarditem(200,'cooking oil',300,20)
 cost=standard_item.calculate_total()
 print("THE TOTAL COST FOR STANDARD ITEM IS:",cost)
+
 discount_item=Discountitem(201,'cabbage',500,60,0.2)
 cost=discount_item.calculate_total()
 print("THE TOTAL COST FOR DISCOUNT ITEM IS:",cost)
+
 service_item=Serviceitem(203,'car',90,4,100)
 cost=service_item.calculate_total()
 print("THE TOTAL COST FOR SERVICE ITEM IS:",cost)

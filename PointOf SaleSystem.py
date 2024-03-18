@@ -13,7 +13,6 @@ class Discountitem(Standarditem):
     def __init__(self, item_id, name, unit_price, quantity, discount_percentage):
         self.discount_percentage = discount_percentage
         super().__init__(item_id, name, unit_price, quantity)
-
     def calculate_total(self):
         discounted_price = self.unit_price * (1 - self.discount_percentage)
         return self.quantity * discounted_price
